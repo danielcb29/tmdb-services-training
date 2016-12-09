@@ -6,6 +6,8 @@ import { MaterialModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 
+import { MovieService } from './app.movie.service';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -16,7 +18,7 @@ import { AppComponent } from './app.component';
     HttpModule,
     MaterialModule.forRoot(),
   ],
-  providers: [],
+  providers: [MovieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
